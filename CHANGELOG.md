@@ -11,9 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- First stable release of DocumentDB cluster
+- First stable release of AWS DocumentDB cluster
 
 
 
-[unreleased]: https://bitbucket.org/devlogic/terraform-aws-docdb-cluster/src/develop/
-[1.0.0]: https://bitbucket.org/devlogic/terraform-aws-docdb-cluster/branches/compare/develop%0D1.0.0#diff
+[unreleased]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster
+[1.0.0]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster

@@ -8,9 +8,10 @@ Usage
 
 ```hcl
 module "pritunl-docdb-cluster" {
-  source = "git@bitbucket.org:devlogic/terraform-aws-docdb-cluster.git?ref=1.0.0"
-  cluster_name       = "pritunl"
-  master_username    = "pritunl"
+  source = "github.com:goranvrbaski/terraform-aws-docdb-cluster.git"
+
+  cluster_name       = "docdb-cluster"
+  master_username    = "doc-user"
   availability_zones = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
   subnet_group_ids   = ["subnet-0e850eb742a6603fe", "subnet-0af42ab0203c31963", "subnet-0dca788fac5b76a63"]
   security_group_ids = ["sg-056b779af0e7e0129"]
@@ -51,11 +52,3 @@ Outputs
 | `cluster_reader_endpoint` | string | the cluster endpoint optimized for read |
 | `master_username` | string | the cluster master username |
 | `master_password` | string | the cluster master password |
-
-
-Authors
-=======
-
-| Author   |      Role      |  Email |  Version |
-|----------|:-------------:|:------:|:------: |
-| Goran Vrbaški |  DevOps Engineer | goran.vrbaski@symphony.is | 1.0.0 |
