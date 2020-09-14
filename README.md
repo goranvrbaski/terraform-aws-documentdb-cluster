@@ -36,7 +36,6 @@ Module Input Variables
 | `skip_final_snapshot` | bool | `true` | skip creating documentdb snapshot on deleting cluster | 
 | `storage_encrypted` | bool | `true` | encrypt data at rest |
 | `tags` | map(string) | `{ terraform = true }` | attach tags to documentdb |
-deleting cluster | 
 
 
 Outputs
