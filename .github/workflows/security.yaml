@@ -1,0 +1,21 @@
+name: static-checks
+on: [pull_request]
+jobs:
+  tfsec:
+    name: runner / terraform
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@master
+
+      - name: tfsec
+        uses: reviewdog/action-tfsec@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review 
+          fail_on_error: "true" 
+          filter_mode: "nofilter" 
+
+      - name: tflint
+        uses: devops-infra/action-tflint@master
