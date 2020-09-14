@@ -1,6 +1,5 @@
-TERRAFORM AWS DOCUMENTDB CLUSTER MODULE
+AWS DocumentDB Cluster Module
 ===========
-Version: 1.0.0
 
 A terraform module to provide DocumentDB Cluster in AWS. This module will create DocumentDB cluster with instances.
 Usage
