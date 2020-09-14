@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2020-09-14
+
+### Added
+
+- Added MIT License
+
+### Changed
+
+- Fixed module source in the README file
+
 ## [1.0.1] - 2020-09-14
 
 ### Changed 
@@ -25,3 +35,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [unreleased]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster/tree/develop
 [1.0.0]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster/tree/v1.0.0
 [1.0.1]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster/tree/v1.0.1
+[1.0.2]: https://github.com/goranvrbaski/terraform-aws-docdb-cluster/tree/v1.0.2
