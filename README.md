@@ -6,8 +6,9 @@ Usage
 
 
 ```hcl
-module "pritunl-docdb-cluster" {
-  source = "github.com:goranvrbaski/terraform-aws-docdb-cluster.git"
+module "docdb-cluster" {
+  source  = "goranvrbaski/docdb-cluster/aws"
+  version = "1.0.0"
 
   cluster_name       = "docdb-cluster"
   master_username    = "doc-user"
