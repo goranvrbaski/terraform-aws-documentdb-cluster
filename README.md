@@ -3,7 +3,7 @@ AWS DocumentDB Cluster Module
 
 A terraform module to provide DocumentDB Cluster in AWS. This module will create DocumentDB cluster with instances.
 Usage
------
+
 
 ```hcl
 module "pritunl-docdb-cluster" {
