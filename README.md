@@ -11,6 +11,7 @@ module "docdb-cluster" {
 
   cluster_name       = "docdb-cluster"
   master_username    = "doc-user"
+  master_password    = "SuperCoolPassword123"
   availability_zones = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
   subnet_group_ids   = ["subnet-0e850eb742a6603fe", "subnet-0af42ab0203c31963", "subnet-0dca788fac5b76a63"]
   security_group_ids = ["sg-056b779af0e7e0129"]
@@ -24,7 +25,7 @@ Module Input Variables
 |----------|:-------------:|:------:|:------ |
 | `cluster_name` |  string | `n/a`| name for the cluster | 
 | `master_username` |  string | `n/a` | name for the master user | 
-| `password_length` |  number | `16` | length of master password to create | 
+| `master_password` |  string | `n/a` | value for the master password | 
 | `instance_class` |  string | `"db.t3.medium"`| documentdb instance class |
 | `instance_count` |  integer | `2` | number of documentdb instances in the cluster | 
 | `subnet_group_ids` |  list | `[]` | list of subnet ids where to create documentdb cluster | 
