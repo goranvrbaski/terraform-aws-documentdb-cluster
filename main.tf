@@ -1,14 +1,8 @@
-resource "random_password" "master_password" {
-  length           = var.password_length
-  special          = true
-  override_special = "_%@'"
-}
-
 resource "aws_docdb_cluster" "this" {
   cluster_identifier      = var.cluster_name
   engine                  = "docdb"
   master_username         = var.master_username
-  master_password         = random_password.master_password.result
+  master_password         = var.master_password
   backup_retention_period = var.backup_rentetion_period
   preferred_backup_window = var.backup_window
   skip_final_snapshot     = var.skip_final_snapshot

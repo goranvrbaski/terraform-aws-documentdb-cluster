@@ -29,7 +29,7 @@ output "master_username" {
 }
 
 output "master_password" {
-  value       = random_password.master_password.result
+  value       = var.master_password
   sensitive   = true
   description = "The cluster password"
 }
