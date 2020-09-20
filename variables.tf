@@ -9,7 +9,7 @@ variable "master_username" {
 }
 
 variable "master_password" {
-  type = string
+  type        = string
   description = "Password to use for the master user"
 }
 
