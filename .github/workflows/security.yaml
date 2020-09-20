@@ -18,4 +18,6 @@ jobs:
           filter_mode: "nofilter" 
 
       - name: tflint
-        uses: devops-infra/action-tflint@master
+        uses: reviewdog/action-tflint@master
+        with:
+          github_token: ${{ secrets.github_token }}
