@@ -8,6 +8,11 @@ variable "master_username" {
   description = "Username to use for master user"
 }
 
+variable "master_password" {
+  type = string
+  description = "Password to use for the master user"
+}
+
 variable "backup_window" {
   type        = string
   default     = "07:00-09:00"
@@ -72,10 +77,4 @@ variable "security_group_ids" {
   type        = list(string)
   default     = []
   description = "List of security group ids to attach to the cluster"
-}
-
-variable "password_length" {
-  type        = number
-  default     = 16
-  description = "Length of master password"
 }
